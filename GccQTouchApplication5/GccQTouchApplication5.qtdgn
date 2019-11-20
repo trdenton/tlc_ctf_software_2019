@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Kit projectId="2" projectName="default" projectType="AVR" Technology="QTouch" DeviceVariant="14/20" QTouchDesignVersion="1.0" QTouchLibraryVersion="5.9.0.211">
+  <KitLayout>
+    <KitSize width="150" height="120" kitPanelThickness="0.1" kitImage="" />
+    <Wheel id="0" name="Wheel0" positionX="36" positionY="41" fromChannel="0" toChannel="2" innerRadius="2" outerRadius="10" zeroPosition="0" direction="0" SensorDesignType="Medium" SegmentBetweenChannels="1" YWidth="0.3" GapThickness="0.3" />
+  </KitLayout>
+  <TechnologySelectionOptions MoistureTolerant="false" NoiseImmune="false" />
+  <GlobalConfiguration recalibrationThreshold="1" detectIntegrationLimit="4" driftHoldTime="20" sensorMaximumDuration="0" negativeDriftRate="20" positiveDriftRate="5" libraryTimingSetting="0" measurementPeriod="50" positiveRecalibrationDelay="10" ticksPerMilliSec="63" />
+  <OtherOprtions delayCycle="128" powerOptimization="0" />
+  <SensorConfigurations autoAssign="true">
+    <SensorConfiguration sensorType="2" fromChannel="0" toChannel="2" aksGroup="0" detectThreshold="10" detectHysteresis="1" positiveRecalibrationFlag="0" positionAngleResolution="7" positionAngleHysteresis="0" />
+  </SensorConfigurations>
+  <PinConfiguration useDefaultPinConfiguration="False">
+    <PinConfig>
+      <PortPair SNS="A" SNSK="A">
+        <Sensor Name="Wheel0" Type="Wheel" Index="0" NumberOfChannels="3">
+          <Port SNSPortPin="PA0" SNSKPortPin="PA1" />
+          <Port SNSPortPin="PA2" SNSKPortPin="PA3" />
+          <Port SNSPortPin="PA6" SNSKPortPin="PA7" />
+        </Sensor>
+      </PortPair>
+    </PinConfig>
+  </PinConfiguration>
+</Kit>
